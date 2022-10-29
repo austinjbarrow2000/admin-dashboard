@@ -131,4 +131,94 @@ button {
 
 #main-content {
     background-color: lightgray;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#your-projects {
+    grid-row: 1 / -1;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+    gap: 2rem;
+}
+
+.project {
+    padding: 2rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+
+.project > p {
+    flex: 1;
+}
+
+.project > h5 {
+    font-weight: 500;
+}
+
+.button-group {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+#announcements-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85%;
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+    padding: 1rem;
+
+}
+
+.announcement {
+    font-size: 0.8rem;
+
+}
+
+.announcement > h5 {
+    font-weight: 500;
+}
+
+#trending-container{
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.trend-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.profile-info > h5 {
+    margin-top: 0.3rem;
+    opacity: 70%;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
