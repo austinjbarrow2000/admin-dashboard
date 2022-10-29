@@ -13,6 +13,13 @@ body {
 #sidebar {
     background-color: rgb(95, 161, 231);
     grid-row: 1 / -1;
+    
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+}
+
+#dashboard {
+    justify-content: center;
 }
 
 #main-content {
