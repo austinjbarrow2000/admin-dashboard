@@ -5,31 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <div id="header">
-            <h1>🔍</h1>
-            <input type="text" id="search-field">
-            <h1>🔔</h1>
-            <div class="profile-picture1"></div>
-            <h1>Austin Barrow</h1>
-            <div id="profile-picture2"></div>
-            <p>Hi there,</p>
-            <h1>Austin Barrow</h1>
-            <button id="New">New</button>
-            <button id="Upload">Upload</button>
-            <button id="Share">Share</button>
+            <div id="search-section">
+                <h1>🔍</h1>
+                <input type="text" id="search-field">
+            </div>
+            
+            <div id="profile-bar">
+                <h1>🔔</h1>
+                <div class="profile-picture1"></div>
+                <h1>Austin Barrow</h1>
+            </div>
+
+            <div id="greeting">
+                <div id="profile-picture2"></div>
+                <p>Hi there,</p>
+                <h1>Austin Barrow</h1>
+            </div>
+
+            <div id="button-section">
+                <button id="New">New</button>
+                <button id="Upload">Upload</button>
+                <button id="Share">Share</button>
+            </div>
 
 
         </div>
 
         <div id="sidebar">
-            <h1 id="dashboard">Dashboard</h1>
 
-            <ul id="nav-links1"> 
+            <div id="title">
+                <h1 id="dashboard">Dashboard</h1>
+            </div>
+
+            <ul class="nav-links"> 
                 <li>🏠 Home</li>
                 <li>🪪 Profile</li>
                 <li>✉️ Messages</li>
@@ -38,7 +52,7 @@
                 <li>👨‍👩‍👦 Communities</li>
             </ul>
 
-            <ul id="nav-links2"> 
+            <ul class="nav-links"> 
                 <li>⚙️ Settings</li>
                 <li>❓ Support</li>
                 <li>🔒 Privacy</li>
